@@ -1,0 +1,34 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/status.html' %}
+
+    <div class="main-content">
+        <main>
+            <div class="client-list-wrapper">
+                <div class="client-list-header">
+                    <h3>Client List</h3>
+
+                    <a class="add-new-client"><button><span><i class="fas fa-plus"></i></span> Add New Client</button></a>
+                </div>
+
+                <div class="client-list-body">
+                    <div class="table-responsive">
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone Number</th>
+                                    <th>Email Address</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main> 
+    </div>
+
+{% endblock %}
