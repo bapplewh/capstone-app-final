@@ -12,6 +12,9 @@ def about(request):
 def testimonials(request):
     return render(request,'accounts/testimonials.html')
 
+def signup(request):
+    return render(request,'accounts/signup.html')
+
 def dashboard(request):
     return render(request,'accounts/dashboard.html')
 

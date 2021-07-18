@@ -1,0 +1,52 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/navbar.html' %}
+
+
+    <div class="signup">
+        <div class="signup-container">
+            <div class="signup-container__content">
+                <div class="signup-container__content--header">
+                    <h1>Want to work together?</h1>
+                </div>
+                
+                <div class="signup-container__content--info">
+                    <h2>Brooke Barker</h2>
+
+                    <div class="signup-container__content--info-group">
+                        <i class="fas fa-phone"></i>
+                        <p>123.456.7890</p>
+                    </div>
+
+                    <div class="signup-container__content--info-group">
+                        <i class="fas fa-envelope"></i>
+                        <p>brooke@test.com</p>
+                    </div>
+
+                    <div class="signup-container__content--info-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Denver, Colorado</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-container__form">
+                <h1>Sign Up Today!</h1>
+                
+                <form action="https://formspree.io/f/mnqlvrol" method="POST">
+                    <input class="signup-container__name" type="text" name="name" placeholder="Name" required>
+                    <input class="signup-container__email" type="email" name="email" placeholder="Email" required>
+                    <input class="signup-container__phone" type="text" name="phone" placeholder="Phone Number" required>
+
+                    <button class="signup-container__button" type="submit" value="Send Email">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% include 'accounts/footer.html' %}
+
+{% endblock %}
