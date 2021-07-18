@@ -681,7 +681,7 @@ banner section */
             rgba(0,0,0,0) 0%, 
             rgba(17,17,17,0.3) 100%
         ), 
-        url('/images/photos/testimonials-client1.jpg');
+        url('../images/photos/testimonials-client1.jpg');
     background-size: cover;
     position: relative;
     align-items: center;
@@ -694,7 +694,7 @@ banner section */
         rgba(0,0,0,0) 0%, 
         rgba(17,17,17,0.5) 100%
     ), 
-        url('/images/photos/testimonials-client2.jpg');
+        url('../images/photos/testimonials-client2.jpg');
 }
 
 
@@ -717,7 +717,7 @@ banner section */
 .left h1 {
     font-size: 3.5rem;
     font-weight: 900;
-    background-image: url('/images/photos/abstract.jpg');
+    background-image: url('../images/photos/abstract.jpg');
     background-size: cover;
     
     -webkit-background-clip: text;

@@ -9,6 +9,9 @@ def home(request):
 def about(request):
     return render(request,'accounts/about.html')
 
+def testimonials(request):
+    return render(request,'accounts/testimonials.html')
+
 def dashboard(request):
     return render(request,'accounts/dashboard.html')
 

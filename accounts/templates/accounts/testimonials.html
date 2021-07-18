@@ -1,0 +1,60 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/navbar.html' %}
+
+
+    <!-- BANNER SECTION -->
+    <div class="testimonials-header">
+        <div class="testimonials-header__content">
+            <i class="fas fa-comments"></i>
+
+            <h1>What my clients are saying</h1>
+    
+            <h2>Suspendisse auctor diam eros. Aenean posuere eros in venenatis efficitur.</h2>
+        </div>
+    </div>
+
+
+    <!-- TESTIMONIALS SECTION -->
+    <div class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-container__image"></div>
+
+            <div class="testimonials-container__content">
+                <i class="fas fa-quote-right"></i>
+                <p>Curabitur sodales ex sed consequat suscipit. Donec aliquet turpis eros, mollis scelerisque odio semper ac. Maecenas posuere ipsum id facilisis scelerisque. Cras rutrum sapien a justo molestie, eget dictum libero faucibus. Praesent at erat varius, ultricies orci id, maximus lacus. In eget porttitor risus. Suspendisse pellentesque ut odio in placerat. </p>
+                <h1>- Dan, client for 3 years</h1>
+            </div>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonials-container__content">
+                <i class="fas fa-quote-right"></i>
+                <p>Curabitur sodales ex sed consequat suscipit. Donec aliquet turpis eros, mollis scelerisque odio semper ac. Maecenas posuere ipsum id facilisis scelerisque. Cras rutrum sapien a justo molestie, eget dictum libero faucibus. Praesent at erat varius, ultricies orci id, maximus lacus. In eget porttitor risus. Suspendisse pellentesque ut odio in placerat. </p>
+                <h1>- Amber, client for 2 years</h1>
+            </div>
+
+            <div class="testimonials-container__image"></div>
+        </div>
+    </div>
+
+
+    <!-- BOTTOM CTA -->
+    <div class="testimonials-cta">
+        <div class="testimonials-cta__container">
+            <div class="left">
+                <h1>What are you waiting for?</h1>
+            </div>
+            
+            <div class="right">
+                <button class="main__button"><a href="/signup.html">Get Started Today!</a></button>
+            </div>
+        </div>
+    </div>
+
+
+{% include 'accounts/footer.html' %}
+
+{% endblock %}
