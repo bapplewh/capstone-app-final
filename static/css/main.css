@@ -1381,7 +1381,40 @@ banner section */
 }
 
 .card-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sub-card {
+    display: grid;
+    height: 80px;
+}
+
+.sub-card button {
+    background: var(--deepsea);
+    border-radius: 4px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .65rem 1.25rem;
+    border: 1px solid transparent;
+}
+
+.sub-card button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: var(--slateblue);
+    cursor: pointer;
+}
+
+.client-search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.card-header {
+    margin-bottom: 1rem;
     /* border-bottom: 1px solid #f0f0f0; */
 }
 
@@ -1420,7 +1453,7 @@ banner section */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #828282;
 }
 
 .clients-header button {
