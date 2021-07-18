@@ -866,7 +866,7 @@ banner section */
 
 
 /* NO MATCH PAGE */
-.no-match {
+/* .no-match {
     position: relative;
     width: 100%;
     height: 93vh;
@@ -947,7 +947,7 @@ banner section */
 
 .no-match__button:hover:after {
     width: 100%;
-}
+} */
 
 
 
@@ -1278,7 +1278,7 @@ banner section */
 
 
 /* DASHBOARD - CLIENT MODAL */
-.bg-client-modal {
+/* .bg-client-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -1359,7 +1359,125 @@ banner section */
     color: var(--darkgrey);
     transition: 0.3s ease-in-out;
     cursor: pointer;
+} */
+
+
+
+/* DASHBOARD - CLIENTS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
 }
+
+.card-single {
+    display: grid;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.card-header {
+    margin-bottom: 2rem;
+    /* border-bottom: 1px solid #f0f0f0; */
+}
+
+.sub-card {
+    display: grid;
+    height: 80px;
+}
+
+.sub-card button {
+    background: var(--deepsea);
+    border-radius: 4px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .65rem 1.25rem;
+    border: 1px solid transparent;
+}
+
+.sub-card button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: var(--slateblue);
+    cursor: pointer;
+}
+
+.clients-wrapper {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.clients-header,
+.clients-body {
+    padding: 1rem;
+}
+
+.clients-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.clients-header button {
+    background: var(--deepsea);
+    border-radius: 4px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .65rem 1.25rem;
+    border: 1px solid transparent;
+}
+
+.clients-header button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: var(--slateblue);
+    cursor: pointer;
+}
+
+.clients-header button:hover:after {
+    width: 100%;
+} 
+
+.clients-body table {
+    border-collapse: collapse;
+}
+
+.clients-body thead {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.clients-body thead th {
+    font-weight: 600;
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+.clients-body tr:nth-child(even) {
+    background-color: #f1f5f7;
+}
+
+.clients-body td {
+    padding: 1rem;
+    font-size: .9rem;
+    color: rgb(53, 53, 53);
+}
+
+.clients-body td button {
+    color: #e88383;
+    font-weight: 500;
+    font-size: .9rem;
+    outline: none;
+    text-decoration: none;
+    border: transparent;
+    background-color: transparent;
+}
+
+
 
 
 /*  FOOTER */
