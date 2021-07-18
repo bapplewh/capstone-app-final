@@ -142,7 +142,7 @@ banner section*/
 .main__content--container-left h2 {
     font-size: 9rem;
     font-weight: 900;
-    background-image: url('/images/photos/abstract.jpg');
+    background-image: url('../images/photos/abstract.jpg');
     background-size: 100%;
 
     -webkit-background-clip: text;
@@ -264,7 +264,7 @@ banner section*/
             rgba(0,0,0,0) 0%, 
             rgba(17,17,17,0.5) 100%
         ), 
-        url('/images/photos/pic2.jpg');
+        url('../images/photos/pic2.jpg');
     background-size: cover;
     position: relative;
     color: white;
@@ -276,7 +276,7 @@ banner section*/
         rgba(0,0,0,0) 0%, 
         rgba(17,17,17,0.5) 100%
     ), 
-    url('/images/photos/pic\ 1.jpg');
+    url('../images/photos/pic1.jpg');
 }
 
 .intro__card a {

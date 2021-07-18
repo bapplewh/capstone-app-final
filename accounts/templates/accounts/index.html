@@ -1,0 +1,96 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/navbar.html' %}
+
+<body>
+    <!-- BANNER SECTION -->
+    <div class="main">
+        <div class="main__content">
+            <div class="main__content--container-left">
+                <h1>LIVE YOUR</h1>
+                <h2>BEST LIFE</h2>
+                <p>You can <b>count on me</b> to meet you where you're at.</p>
+                <button class="main__button"><a href="/signup.html">Get Started</a></button>
+            </div>
+
+            <div class="main__content--container-right"></div>
+        </div>
+
+        <div class="video-container">
+            <div class="color-overlay"></div>
+
+            <video class="home-video" autoplay loop muted>
+                <source src="../../../static/images/videos/home-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+
+    <!-- INTRO SECTION -->
+    <div class="intro">
+        <h1>Let's get to work</h1>
+
+        <div class="intro__container">
+            <div class="intro__card">
+                <h2>Client testimonials</h2>
+
+                <a href="/testimonials.html">Learn More</a>
+            </div>
+
+            <div class="intro__card">
+                <h2>Change your future</h2>
+
+                <a href="/signup.html">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SERVICES SECTION -->
+    <div class="services">
+        <h1>What you can expect</h1>
+
+        <h2>Below are the services I'm currently offering for your future success:</h2>
+
+        <div class="services__container">
+            <div class="services__card">
+                <i class="fas fa-biking"></i>
+                <br />
+                <p>Full service <br />personal training</p>
+            </div>
+
+            <div class="services__card">
+                <i class="fas fa-compass"></i>
+                <br />
+                <p>Mobile location variability</p>
+            </div>
+
+            <div class="services__card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <br />
+                <p>Affordable <br />prices</p>
+            </div>
+
+            <div class="services__card">
+                <i class="fas fa-dumbbell"></i>
+                <br />
+                <p>Equipment provided for use</p>
+            </div>
+
+            <div class="services__card">
+                <i class="fas fa-hands-helping"></i>
+                <br />
+                <p>Accountability partner</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src='app.js'></script> -->
+
+</body>
+
+{% include 'accounts/footer.html' %}
+
+{% endblock %}
