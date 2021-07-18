@@ -1,0 +1,98 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/navbar.html' %}
+
+
+    <!-- BANNER SECTION -->
+    <div class="about">
+        <div class="about__container">
+            <div class="about__image--container">
+                <img src="../../../static/images/photos/about-banner.png" alt="pic" id="about" width="500">
+            </div>
+
+            <div class="about__content">
+                <h1>I'm Brooke</h1>
+                <h2>NICE TO  MEET YOU</h2>
+
+                <button class="about__button"><a href="/signup.html">Contact Me</a></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SUMMARY SECTION -->
+    <div class="about-summary">
+        <div class="about-summary__container">
+            <div class="about-summary__card">
+                <!-- <h2>Get to know me</h2>
+
+                <button>About me</button> -->
+            </div>
+
+            <div class="about-summary__card">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit integer eleifend turpis</h2>
+
+                <p>Nulla accumsan sem vel orci mollis, iaculis fringilla augue consectetur. 
+                Suspendisse ultricies, mauris vel vehicula pretium, diam risus vestibulum est, 
+                id scelerisque quam risus a eros. Etiam quis sapien nisi. Vestibulum ante 
+                ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                Vestibulum eu orci tempus, venenatis neque sed, malesuada elit. Sed cursus 
+                ultrices tempor. Aenean sit amet velit at nibh sollicitudin ullamcorper non 
+                ac diam. <br/><br/>
+                
+                Fusce sodales sodales fringilla. Curabitur sit amet pretium metus, et auctor 
+                lacus. Donec fermentum, arcu sed ultrices aliquet, nisl nisi dictum risus, 
+                et aliquam tortor purus nec velit. Phasellus id ullamcorper tellus. Mauris 
+                sollicitudin tempor eros quis euismod. Etiam tristique feugiat dui. <br/><br/>
+                
+                <b>Morbi tincidunt ex eu rutrum nisi nec volutpat convallis.</b></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MY QUALIFICATIONS SECTION -->
+    <div class="qualifications">
+        <h1>My qualifications</h1>
+
+        <h2>Suspendisse auctor diam eros. Aenean posuere eros in venenatis efficitur.</h2>
+
+        <div class="qualifications__container">
+            <div class="qualifications__card">
+                <i class="far fa-check-circle"></i>
+                <br />
+                <p>Aenean quam elit, ullamcorper vel purus ac, lobortis pulvinar sem</p>
+            </div>
+
+            <div class="qualifications__card">
+                <i class="far fa-check-circle"></i>
+                <br />
+                <p>Curabitur dictum, libero imperdiet lobortis tempus</p>
+            </div>
+
+            <div class="qualifications__card">
+                <i class="far fa-check-circle"></i>
+                <br />
+                <p>Nullam ornare viverra tellus, eu pharetra ex porta sed</p>
+            </div>
+
+            <div class="qualifications__card">
+                <i class="far fa-check-circle"></i>
+                <br />
+                <p>Etiam vehicula ante sit amet semper bibendum</p>
+            </div>
+
+            <div class="qualifications__card">
+                <i class="far fa-check-circle"></i>
+                <br />
+                <p>Donec mollis metus non mi ultrices, id gravida lorem bibendum</p>
+            </div>
+        </div>
+    </div>
+
+
+{% include 'accounts/footer.html' %}
+
+{% endblock %}

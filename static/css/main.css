@@ -211,7 +211,6 @@ banner section*/
 
 .home-video {
     width: 100%;
-
 }
 
 .color-overlay {
@@ -405,7 +404,7 @@ banner section*/
 .about__content h2 {
     font-size: 7rem;
     font-weight: 900;
-    background-image: url('/images/photos/abstract.jpg');
+    background-image: url('../images/photos/abstract.jpg');
     background-size: 100%;
 
     -webkit-background-clip: text;
@@ -493,7 +492,7 @@ banner section*/
             rgba(0,0,0,0) 0%, 
             rgba(17,17,17,0.25) 100%
         ), 
-        url('/images/photos/about1.jpg');
+        url('../images/photos/about1.jpg');
     background-size: cover;
     position: relative;
     color: white;

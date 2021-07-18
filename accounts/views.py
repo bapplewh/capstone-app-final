@@ -6,6 +6,9 @@ from django.http import HttpResponse
 def home(request):
     return render(request,'accounts/index.html')
 
+def about(request):
+    return render(request,'accounts/about.html')
+
 def dashboard(request):
     return render(request,'accounts/dashboard.html')
 
