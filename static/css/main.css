@@ -969,7 +969,7 @@ banner section */
 .signin-container__content h1 {
     font-size: 5.25rem;
     font-weight: 900;
-    background-image: url('/images/photos/abstract.jpg');
+    background-image: url('../images/photos/abstract.jpg');
     background-size: 100%;
     text-align: center;
     align-self: center;
@@ -1213,7 +1213,7 @@ banner section */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #f0f0f0;
+    /* border-bottom: 1px solid #808080; */
 }
 
 .recent-orders-header button {
@@ -1403,44 +1403,14 @@ banner section */
     cursor: pointer;
 }
 
-.client-search-container {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 2rem;
-    width: 100%;
-}
-
-.card-header {
-    margin-bottom: 1rem;
-    /* border-bottom: 1px solid #f0f0f0; */
-}
-
-.sub-card {
-    display: grid;
-    height: 80px;
-}
-
-.sub-card button {
-    background: var(--deepsea);
-    border-radius: 4px;
-    color: #fff;
-    font-size: .8rem;
-    padding: .65rem 1.25rem;
-    border: 1px solid transparent;
-}
-
-.sub-card button:hover {
-    transition: 0.3s ease-in-out;
-    background-color: var(--slateblue);
-    cursor: pointer;
-}
-
 .clients-wrapper {
     margin-top: 50px;
     background: #fff;
     border-radius: 5px;
+}
+
+.clients-header:nth-child(2) {
+    border-bottom: 1px solid #828282;
 }
 
 .clients-header,
@@ -1452,7 +1422,7 @@ banner section */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #828282;
+    /* border-bottom: 1px solid #828282; */
 }
 
 .clients-header button {

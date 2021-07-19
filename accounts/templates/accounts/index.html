@@ -1,5 +1,7 @@
 {% extends 'accounts/main.html' %}
 
+{% load static %}
+
 {% block content %}
 
 {% include 'accounts/navbar.html' %}
@@ -22,7 +24,7 @@
             <div class="color-overlay"></div>
 
             <video class="home-video" autoplay loop muted>
-                <source src="../../../static/images/videos/home-video.mp4" type="video/mp4">
+                <source src="{% static '/images/videos/home-video.mp4' %}" type="video/mp4">
             </video>
         </div>
     </div>
@@ -86,8 +88,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <script src='app.js'></script> -->
 
 
 {% include 'accounts/footer.html' %}

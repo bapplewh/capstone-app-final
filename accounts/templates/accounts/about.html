@@ -1,5 +1,7 @@
 {% extends 'accounts/main.html' %}
 
+{% load static %}
+
 {% block content %}
 
 {% include 'accounts/navbar.html' %}
@@ -9,7 +11,7 @@
     <div class="about">
         <div class="about__container">
             <div class="about__image--container">
-                <img src="../../../static/images/photos/about-banner.png" alt="pic" id="about" width="500">
+                <img src="{% static '/images/photos/about-banner.png' %}" alt="pic" id="about" width="500">
             </div>
 
             <div class="about__content">
