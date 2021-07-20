@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
-from .forms import OrderForm
+from .forms import ClientForm, OrderForm
 
 # Create your views here.
 
@@ -66,6 +66,19 @@ def updateOrder(request, pk):
     context = {'form': form}
 
     return render(request, 'accounts/order-form.html', context)
+
+
+def createClient(request):
+    form = ClientForm()
+    if request.method == 'POST':
+        form = ClientForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('dashboard')
+
+    context = {'form': form}
+
+    return render (request, 'accounts/client-form.html', context)
 
 def deleteClient(request, pk):
     client = Client.objects.get(id=pk)
