@@ -31,6 +31,7 @@
                                     <td>{{client.name}}</td>
                                     <td>{{client.phone}}</td>
                                     <td>{{client.email}}</td>
+                                    <td><a href="{% url 'client' client.id %}">View Client</a></td>
                                 </tr>
                             {% endfor %}
 

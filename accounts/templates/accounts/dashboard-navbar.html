@@ -14,11 +14,11 @@
         <div class="dashboard-navbar-container">
             <ul class="dashboard-navbar">
                 <li class="dashboard-navbar__item">
-                    <a href="/" class="dashboard-navbar__links">Dashboard</a>
+                    <a href="{% url 'dashboard' %}" class="dashboard-navbar__links">Dashboard</a>
                 </li>
 
                 <li class="dashboard-navbar__item">
-                    <a href="/about.html" class="dashboard-navbar__links">Packages</a>
+                    <a href="{% url 'packages' %}" class="dashboard-navbar__links">Packages</a>
                 </li>
 
                 <!-- <li class="dashboard-navbar__item">
