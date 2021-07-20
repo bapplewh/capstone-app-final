@@ -24,6 +24,15 @@
                                     <th>Rate</th>
                                 </tr>
                             </thead>
+
+                            {% for i in packages %}
+                                <tr>
+                                    <td>{{i.name}}</td>
+                                    <td>{{i.hourly_rate}}</td>
+                                    <td>{{i.description}}</td>
+                                </tr>
+                            {% endfor %}
+
                             <tbody></tbody>
                         </table>
                     </div>

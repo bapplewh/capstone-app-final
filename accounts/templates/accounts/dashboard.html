@@ -10,7 +10,7 @@
         <main>
             <div class="client-list-wrapper">
                 <div class="client-list-header">
-                    <h3>Client List</h3>
+                    <h3>Clients</h3>
 
                     <a class="add-new-client"><button><span><i class="fas fa-plus"></i></span> Add New Client</button></a>
                 </div>
@@ -25,6 +25,15 @@
                                     <th>Email Address</th>
                                 </tr>
                             </thead>
+
+                            {% for client in clients %}
+                                <tr>
+                                    <td>{{client.name}}</td>
+                                    <td>{{client.phone}}</td>
+                                    <td>{{client.email}}</td>
+                                </tr>
+                            {% endfor %}
+
                             <tbody></tbody>
                         </table>
                     </div>
@@ -46,8 +55,23 @@
                                     <th>Name</th>
                                     <th>Phone Number</th>
                                     <th>Email Address</th>
+                                    <th>Start Date</th>
+                                    <th>Update</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
+
+                            {% for order in orders %}
+                            <tr>
+                                <td>{{order.client}}</td>
+                                <td>{{order.package}}</td>
+                                <td>{{order.status}}</td>
+                                <td>{{order.date_created}}</td>
+                                <td><a href="">Update</a></td>
+                                <td><a href="">Delete</a></td>
+                            </tr>
+                        {% endfor %}
+
                             <tbody></tbody>
                         </table>
                     </div>
