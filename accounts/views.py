@@ -29,5 +29,10 @@ def packages(request):
 
     return render(request,'accounts/packages.html', {'packages': packages})
 
-def clients(request):
-    return render(request,'accounts/clients.html')
+def client(request, pk_test):
+    client = Client.objects.get(id=pk_test)
+    orders = client.order_set.all()
+
+    context = {'client': client, 'orders': orders}
+
+    return render(request,'accounts/client.html', context)

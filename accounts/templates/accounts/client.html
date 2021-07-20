@@ -9,43 +9,14 @@
             <div class="cards">
                 <div class="card-single">
                     <div class="card-header">
-                        <h3>Client</h3>
-                    </div>
-
-                    <div class="sub-card">
-                        <a class="update-client"><button> Update Client</button></a>
-                        <a class="delete-client"><button> Delete Client</button></a>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div class="card-header">
                         <h3>Client Information</h3>
                     </div>
 
                     <div class="sub-card">
-                        <span>Email:</span>
-                        <span>Phone:</span>
+                        <span>Name: {{client.name}}</span>
+                        <span>Email: {{client.email}}</span>
+                        <span>Phone: {{client.phone}}</span>
                     </div>
-                </div>
-
-                <div class="card-single">
-                    <div class="card-header">
-                        <h3>Total Orders</h3>
-                    </div>
-
-                    <div class="sub-card">
-                        <!-- <a class="update-client"><button> Update Client</button></a>
-                        <a class="delete-client"><button> Delete Client</button></a> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="clients-wrapper">
-                <div class="clients-header">
-                    <h3>Search Clients</h3>
-
-                    <a class="update-client"><button>Search</button></a>
                 </div>
             </div>
 
@@ -60,12 +31,23 @@
                             <thead>
                                 <tr>
                                     <th>Package</th>
-                                    <th>Date Ordered</th>
+                                    <th>Date Created</th>
                                     <th>Status</th>
                                     <th>Update</th>
                                     <th>Remove</th>
                                 </tr>
                             </thead>
+
+                            {% for order in orders %}
+                                <tr>
+                                    <td>{{order.package}}</td>
+                                    <td>{{order.date_created}}</td>
+                                    <td>{{order.status}}</td>
+                                    <td><a href="">Update</a></td>
+                                    <td><a href="">Delete</a></td>
+                                </tr>
+                            {% endfor %}
+
                             <tbody></tbody>
                         </table>
                     </div>
