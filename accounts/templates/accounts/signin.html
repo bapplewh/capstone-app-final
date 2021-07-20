@@ -1,0 +1,24 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+
+{% include 'accounts/navbar.html' %}
+
+
+    <div class="signin-container">
+        <div class="signin-container__content">
+            <h1>Welcome back!</h1>
+            
+            <form action="#" method="POST">
+                <input class="input" type="text" name="username" placeholder="Username">
+                <input class="input" type="password" name="password" placeholder="Password">
+
+                <button type="submit" class="signin-container__button"><a>Sign In</a></button>
+            </form>
+        </div>
+    </div>
+
+
+{% include 'accounts/footer.html' %}
+
+{% endblock %}
