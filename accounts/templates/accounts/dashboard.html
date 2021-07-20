@@ -23,6 +23,7 @@
                                     <th>Name</th>
                                     <th>Phone Number</th>
                                     <th>Email Address</th>
+                                    <th>View Client</th>
                                 </tr>
                             </thead>
 
@@ -31,7 +32,7 @@
                                     <td>{{client.name}}</td>
                                     <td>{{client.phone}}</td>
                                     <td>{{client.email}}</td>
-                                    <td><a href="{% url 'client' client.id %}">View Client</a></td>
+                                    <td><a href="{% url 'client' client.id %}"><i class="fas fa-eye"></i></a></td>
                                 </tr>
                             {% endfor %}
 
@@ -45,7 +46,7 @@
                 <div class="recent-orders-header">
                     <h3>Recent Orders</h3>
 
-                    <a class="add-new-order"><button><span><i class="fas fa-plus"></i></span> Create New Order</button></a>
+                    <a class="add-new-order" href="{% url 'create_order' %}"><button><span><i class="fas fa-plus"></i></span> Create New Order</button></a>
                 </div>
 
                 <div class="recent-orders-body">
@@ -54,11 +55,10 @@
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Phone Number</th>
-                                    <th>Email Address</th>
+                                    <th>Package</th>
+                                    <th>Status</th>
                                     <th>Start Date</th>
-                                    <th>Update</th>
-                                    <th>Delete</th>
+                                    <th>Edit Order</th>
                                 </tr>
                             </thead>
 
@@ -68,8 +68,7 @@
                                 <td>{{order.package}}</td>
                                 <td>{{order.status}}</td>
                                 <td>{{order.date_created}}</td>
-                                <td><a href="">Update</a></td>
-                                <td><a href="">Delete</a></td>
+                                <td><a href="{% url 'update_order' order.id %}"><i class="fas fa-edit"></i></a></td>
                             </tr>
                         {% endfor %}
 
