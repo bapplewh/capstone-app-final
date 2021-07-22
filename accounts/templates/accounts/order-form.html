@@ -6,7 +6,7 @@
 
 {% include 'accounts/dashboard-navbar.html' %}
 
-    <div class="main-content">
+    <!-- <div class="main-content">
         <main>
             <form action="" method="POST">
                 {% csrf_token %}
@@ -15,6 +15,34 @@
                 <input type="submit" name="Submit">
             </form>
         </main>
+    </div> -->
+
+
+    <div class="dashboard-form">
+        <div class="dashboard-form-container">
+            <div class="dashboard-form-container__content">
+                <div class="dashboard-form-container__content--header">
+                    <h1>Create New Order</h1>
+                </div>
+            </div>
+
+            <div class="dashboard-form-container__form">
+                <form action="" method="POST">
+                    {% csrf_token %}
+
+                    <label for="">Client</label>
+                    {{form.client}}
+                    <label for="">Package</label>
+                    {{form.package}}
+                    <label for="">Status</label>
+                    {{form.status}}
+    
+                    <input class="dashboard-form-container__button" type="submit" name="Submit">
+                </form>
+            </div>
+
+            {{form.errors}}
+        </div>
     </div>
 
 

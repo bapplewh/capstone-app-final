@@ -6,16 +6,41 @@
 
 {% include 'accounts/dashboard-navbar.html' %}
 
-    <div class="main-content">
-        <main>
-            <form action="" method="POST">
-                {% csrf_token %}
-                {{form}}
+    <div class="dashboard-form">
+        <div class="dashboard-form-container">
+            <div class="dashboard-form-container__content">
+                <div class="dashboard-form-container__content--header">
+                    <h1>Add a Client</h1>
+                </div>
+            </div>
 
-                <input type="submit" name="Submit">
-            </form>
-        </main>
+            <div class="dashboard-form-container__form">
+                <form action="" method="POST">
+                    {% csrf_token %}
+
+                    {{form.name}}
+                    {{form.phone}}
+                    {{form.email}}
+    
+                    <input class="dashboard-form-container__button" type="submit" name="Submit">
+                </form>
+            </div>
+
+            {{form.errors}}
+        </div>
     </div>
+
+    <script>
+        var form_fields = document.getElementsByTagName('input')
+        form_fields[1].placeholder='Name';
+        form_fields[2].placeholder='Phone';
+        form_fields[3].placeholder='Email';
+
+
+        for (var field in form_fields){	
+        form_fields[field].className += ' form-control'
+        }
+    </script>
 
 
 {% endblock %}

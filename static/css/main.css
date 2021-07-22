@@ -19,8 +19,6 @@
     font-size: 1.1rem;
     position: sticky;
     top: 0;
-
-    /* this ensures that no matter which page you're on, the nav will always appear on top of that pages content */
     z-index: 999;
 }
 
@@ -93,7 +91,6 @@
 .button:hover {
     background-color: var(--oceanbay);
     color: var(--darkgrey);
-    /* background-image: linear-gradient(to top, rgb(73, 5, 131) 0%, #5f27b8 100%); */
     transition: all .5s ease;
 }
 
@@ -213,15 +210,6 @@ banner section*/
     width: 100%;
 }
 
-.color-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--darkgrey);
-    opacity: 60%;
-    width: 100%;
-    height: 93vh;
-}
 
 
 /* homepage intro cards section */
@@ -957,18 +945,6 @@ banner section */
     height: 80vh;
 }
 
-.dashboard-navbar header {
-    background: var(--text-dark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-}
-
 .user-wrapper {
     display: flex;
     align-items: center;
@@ -991,28 +967,6 @@ banner section */
 .user-wrapper small {
     display: inline-block;
     color: var(--litegrey);
-}
-
-.dashboard-navbar {
-    display: flex;
-}
-
-.dashboard-navbar__item {
-    margin-right: 2rem;
-}
-
-.dashboard-navbar__links {
-    color: #8d8d98;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.05rem;
-}
-
-.dashboard-navbar__links:hover {
-    transition: .3s ease-in-out;
-    color: white;
-    cursor: pointer;
 }
 
 .top-icons-wrapper {
@@ -1042,6 +996,7 @@ banner section */
 .client-list-wrapper {
     background: #fff;
     border-radius: 5px;
+    border: 1px solid #d3dae1;
 }
 
 .client-list-header,
@@ -1114,6 +1069,7 @@ banner section */
     margin-top: 50px;
     background: #fff;
     border-radius: 5px;
+    border: 1px solid #d3dae1;
 }
 
 .recent-orders-header,
@@ -1125,7 +1081,6 @@ banner section */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid #808080; */
 }
 
 .recent-orders-header button {
@@ -1209,10 +1164,13 @@ banner section */
 
 .sub-card {
     display: grid;
-    height: 80px;
+    height: 135px;
+    line-height: 25px;
+    font-size: .9rem;
 }
 
 .sub-card button {
+    margin-top: 15px;
     background: var(--deepsea);
     border-radius: 4px;
     color: #fff;
@@ -1246,7 +1204,6 @@ banner section */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid #828282; */
 }
 
 .clients-header button {
@@ -1303,6 +1260,71 @@ banner section */
     background-color: transparent;
 }
 
+
+
+/* DASHBOARD FORM PAGE */
+.dashboard-form {
+    height: 90vh;
+    background-color: #e6eff7;
+}
+
+.dashboard-form-container {
+    display: grid;
+    margin: 0 auto;
+    background-color: #e6eff7;
+    width: 100%;
+    max-width: 1500px;
+    padding: 50px;
+}
+
+.dashboard-form-container__content--header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.dashboard-form-container__form form {
+    display: grid;
+    margin: 1.6rem 0;
+    width: 40%;
+}
+
+.dashboard-form-container__form input {
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    font-size: 1.2rem;
+    border: 1px solid #d3dae1;
+}
+
+.dashboard-form-container__form select {
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    font-size: 1.2rem;
+    border: 1px solid #d3dae1;
+    margin-bottom: 15px;
+}
+
+.dashboard-form-container__button {
+    font-size: 1.15rem;
+    background-color: var(--deepsea);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease;
+    outline: none;
+    width: 150px;
+    color: white;
+}
+
+.dashboard-form-container__button:hover {
+    background-color: var(--slateblue);
+}
 
 
 
@@ -1495,12 +1517,6 @@ banner section */
         width: 100%;
         height: 100vh;
         overflow: hidden;
-    }
-
-    .color-overlay {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
     }
 
     .home-video {
@@ -2613,32 +2629,23 @@ banner section */
 /* DASHBOARD */
 /* main page */
 @media only screen and (max-width: 960px) {
-    .dashboard-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .recent-projects {
         grid-template-columns: 60% 40%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .dashboard-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .recent-projects {
         grid-template-columns: 100%;
     }
-
-    .search-wrapper {
-        display: none;
-    }
 }
 
-@media only screen and (max-width: 768px) {
-    .dashboard-cards {
-        grid-template-columns: 100%;
+
+/* DASHBOARD */
+/* main page */
+@media only screen and (max-width: 960px) {
+    .dashboard-form-container__form form {
+        width: 95%;
     }
 }
 
