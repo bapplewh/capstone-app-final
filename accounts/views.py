@@ -24,25 +24,6 @@ def testimonials(request):
 def signup(request):
     return render(request,'accounts/signup.html')
 
-def register(request):
-    if request.user.is_authenticated:
-        return redirect('dashboard')
-    else:
-        form = CreateUserForm()
-
-        if request.method == 'POST':
-            form = CreateUserForm(request.POST)
-            if form.is_valid():
-                form.save()
-                user = form.cleaned_data.get('username')
-                messages.success(request, 'Account was created for ' + user)
-
-                return redirect ('signin')
-
-        context = {'form': form}
-
-        return render(request,'accounts/register.html', context)
-
 def signin(request):
     if request.user.is_authenticated:
         return redirect('dashboard')
